@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
     <id>Autofac.Extras.MvvmCross</id>
-    <version>$version$</version>
+    <version>3.3.1-beta4</version>
     <authors>Autofac Contributors</authors>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -13,8 +13,14 @@
     <projectUrl>http://autofac.org</projectUrl>
     <iconUrl>http://code.google.com/p/autofac/logo</iconUrl>
     <dependencies>
-      <dependency id="Autofac" version="[3.5.0,4.0.0)" />
-      <dependency id="MvvmCross.HotTuna.CrossCore" version="[3.2.1,4.0.0)" />
+      <dependency id="Autofac" version="3.5.0" />
+      <dependency id="MvvmCross.HotTuna.CrossCore" version="4.0.0-beta4" />
     </dependencies>
   </metadata>
+  <files>
+	<!-- PCL -->
+	<file src="bin\Release\Autofac.Extras.MvvmCross.*" target="lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1" />
+
+	<file src="bin\Release\Autofac.Extras.MvvmCross.*" target="lib\net40" />
+	</files>
 </package>
